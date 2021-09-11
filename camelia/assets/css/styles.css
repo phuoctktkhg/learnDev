@@ -1,0 +1,204 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'sfu';
+    src: url("../font/00297-SFUFuturaRegular.TTF");
+}
+
+html {
+    font-family: sfu, Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    line-height: 1.6;
+    overflow-y: scroll;
+}
+
+.top {
+    background-color: #f5f5f5;
+    border-bottom: 1px solid #f0ebeb;
+}
+
+.header {
+    width: 1230px;
+    height: 50px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    line-height: 50px;
+}
+
+.header * {
+    display: flex;
+    padding: 5px;
+    align-items: center;
+}
+
+.phone i,
+.email i,
+.cart i {
+    color: #d61c1f;
+    padding-left: 4px;
+}
+
+.cart i {
+    font-size: 30px;
+}
+
+.search input {
+    width: 200px;
+    padding: 8px 10px;
+    line-height: 20px;
+    outline: none;
+    border: 1px solid #f0ebeb;
+    font-family: sfu;
+    font-size: 14px;
+}
+
+.search input * {
+    border-radius: 5px;
+}
+
+.search button {
+    background-color: #545457;
+    border: none;
+    cursor: pointer;
+}
+
+.search button i {
+    font-size: 18px;
+    color: #e7e7e7;
+}
+
+.cart {
+    position: relative;
+    cursor: pointer;
+}
+
+.cart span {
+    position: absolute;
+    color: white;
+    background-color: #d61c1f;
+    font-size: 10px;
+    width: 17px;
+    height: 17px;
+    border-radius: 50%;
+    top: 4px;
+    right: 4px;
+    align-items: center;
+}
+
+.nav {
+    width: 1200px;
+    margin: auto;
+}
+
+.nav .nav-first {
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 1px solid #ccc;
+}
+
+.nav .nav-first>* {
+    width: 33%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 15px;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+    outline: none;
+}
+
+a:hover {
+    color: #d61c1f;
+}
+
+.nav-first img {
+    width: 150px;
+}
+
+.nav-second {
+    display: flex;
+    justify-content: center;
+    padding: 5px 0;
+    border-bottom: 1px solid #ccc;
+}
+
+.nav-second .col {
+    width: 200px;
+    text-align: center;
+    line-height: 1.4;
+}
+
+.nav-second .col+.col {
+    border-left: 1px solid #e7e7e7;
+}
+
+.nav-second .col:hover {
+    color: #d61c1f;
+    transition: 0.5s;
+}
+
+.nav-second img {
+    height: 60px;
+    color: black;
+    opacity: 1;
+}
+
+.balo div {
+    background: url('../img/baloden.svg');
+    background-repeat: no-repeat;
+    background-position-x: center;
+}
+
+.vi div {
+    background: url('../img/viden.svg');
+    background-repeat: no-repeat;
+    background-position-x: center;
+}
+
+.tuixach div {
+    background: url('../img/tuixachden.svg');
+    background-repeat: no-repeat;
+    background-position-x: center;
+}
+
+.tuicheo div {
+    background: url('../img/tuicheoden.svg');
+    background-repeat: no-repeat;
+    background-position-x: center;
+}
+
+.balo:hover div {
+    background: url('../img/balodo.svg');
+    background-repeat: no-repeat;
+    background-position-x: center;
+    transition: 0.5s;
+}
+
+.vi:hover div {
+    background: url('../img/vido.svg');
+    background-repeat: no-repeat;
+    background-position-x: center;
+    transition: 0.5s;
+}
+
+.tuixach:hover div {
+    background: url('../img/tuixachdo.svg');
+    background-repeat: no-repeat;
+    background-position-x: center;
+    transition: 0.5s;
+}
+
+.tuicheo:hover div {
+    background: url('../img/tuicheodo.svg');
+    background-repeat: no-repeat;
+    background-position-x: center;
+    transition: 0.5s;
+}
